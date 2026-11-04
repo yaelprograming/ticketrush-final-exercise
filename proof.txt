@@ -1,0 +1,96 @@
+### git worktree list
+C:/Users/user1/source/ticketrush-final-exercise                                                                       9ea16f0 [main]
+C:/Users/user1/source/copilot-worktrees/ticketrush-final-exercise/copilot-prewarm-miniature-invention                 6e5b25d (detached HEAD)
+C:/Users/user1/source/copilot-worktrees/ticketrush-final-exercise/hotfix-price                                        1768b43 [hotfix/price]
+C:/Users/user1/source/copilot-worktrees/ticketrush-final-exercise/main-integration                                    9ea16f0 [main]
+C:/Users/user1/source/copilot-worktrees/ticketrush-final-exercise/yaelprograming-turbo-garbanzo                       bdd272b [feature/early-access]
+C:/Users/user1/source/copilot-worktrees/ticketrush-final-exercise/yaelprograming-turbo-garbanzo/.worktrees/noa-read   f7e8785 [noa/refund]
+C:/Users/user1/source/copilot-worktrees/ticketrush-final-exercise/yaelprograming-turbo-garbanzo/.worktrees/noa-review 1cbca5a [review/noa-refund]
+C:/Users/user1/source/copilot-worktrees/ticketrush-final-exercise/yaelprograming-turbo-garbanzo/.worktrees/security   1768b43 [security/remove-api-key]
+C:/Users/user1/source/copilot-worktrees/ticketrush-final-exercise/yaelprograming-turbo-garbanzo/.worktrees/waitlist   59e23a0 [feature/waitlist]
+
+### git branch -a -vv
+* feature/early-access                                  bdd272b Merge local config protection into early access
++ feature/waitlist                                      59e23a0 (C:/Users/user1/source/copilot-worktrees/ticketrush-final-exercise/yaelprograming-turbo-garbanzo/.worktrees/waitlist) Merge local config protection into waitlist
++ hotfix/price                                          1768b43 (C:/Users/user1/source/copilot-worktrees/ticketrush-final-exercise/hotfix-price) Stop tracking local payment API config
++ main                                                  9ea16f0 (C:/Users/user1/source/copilot-worktrees/ticketrush-final-exercise/main-integration) [origin/main: ahead 14] Merge waitlist feature
++ noa/refund                                            f7e8785 (C:/Users/user1/source/copilot-worktrees/ticketrush-final-exercise/yaelprograming-turbo-garbanzo/.worktrees/noa-read) [origin/noa/refund] test: refund tests
++ review/noa-refund                                     1cbca5a (C:/Users/user1/source/copilot-worktrees/ticketrush-final-exercise/yaelprograming-turbo-garbanzo/.worktrees/noa-review) Merge local config protection into refund review
++ security/remove-api-key                               1768b43 (C:/Users/user1/source/copilot-worktrees/ticketrush-final-exercise/yaelprograming-turbo-garbanzo/.worktrees/security) Stop tracking local payment API config
+  yaelprograming-ticketrush-exercise                    6e5b25d feat: friendlier message for empty quantity
+  remotes/origin/HEAD                                   -> origin/main
+  remotes/origin/dana/promo                             d4b1e35 test: add student discount tests
+  remotes/origin/main                                   6e5b25d feat: friendlier message for empty quantity
+  remotes/origin/noa/refund                             f7e8785 test: refund tests
+  remotes/origin/ruth/fixes                             fee9f58 wip: try new fonts
+  remotes/origin/yaelprograming/feature/early-access    bdd272b Merge local config protection into early access
+  remotes/origin/yaelprograming/feature/waitlist        59e23a0 Merge local config protection into waitlist
+  remotes/origin/yaelprograming/hotfix/price            1768b43 Stop tracking local payment API config
+  remotes/origin/yaelprograming/main                    9ea16f0 Merge waitlist feature
+  remotes/origin/yaelprograming/review/noa-refund       1cbca5a Merge local config protection into refund review
+  remotes/origin/yaelprograming/security/remove-api-key 1768b43 Stop tracking local payment API config
+
+### git log --graph --oneline --all -n 80
+* 0ef36e8 copilot checkpoint: 66360ef8-cfa7-44e8-8ea1-f0d92753d91d @ 870efcdc-d18b-4b72-895b-5da39ec0a46f
+| * cddc61b copilot checkpoint: 66360ef8-cfa7-44e8-8ea1-f0d92753d91d @ 26ae632c-a7f8-4533-80da-7e74edd4a0b5
+|/  
+| *   9ea16f0 (tag: yaelprograming/v1.1, tag: v1.1, origin/yaelprograming/main, main) Merge waitlist feature
+| |\  
+| | *   59e23a0 (origin/yaelprograming/feature/waitlist, feature/waitlist) Merge local config protection into waitlist
+| | |\  
+| | * | e3bc367 Add waitlist email signup
+| * | |   905b67d Merge early-access and student pricing
+| |\ \ \  
+| |/ / /  
+|/| | /   
+| | |/    
+| |/|     
+* | | bdd272b (HEAD -> feature/early-access, origin/yaelprograming/feature/early-access) Merge local config protection into early access
+|\| | 
+* | | f873f8b Increase member ticket limit to six
+* | |   5fffeb6 Sync price recovery into early access
+|\ \ \  
+| | |/  
+| |/|   
+* | |   4e44d62 Merge origin/dana/promo into feature/early-access
+|\ \ \  
+| * | | d4b1e35 (origin/dana/promo) test: add student discount tests
+| * | | 0841085 feat: student discount (15%)
+* | | | 3729592 Add member early-access pricing
+|/ / /  
+| | | *   1cbca5a (origin/yaelprograming/review/noa-refund, review/noa-refund) Merge local config protection into refund review
+| | | |\  
+| | | |/  
+| | |/|   
+| | * | 1768b43 (origin/yaelprograming/security/remove-api-key, origin/yaelprograming/hotfix/price, security/remove-api-key, hotfix/price) Stop tracking local payment API config
+| | * | 3c76c05 fix: correct concert date in events.js
+| |/ /  
+| * / d48e461 Revert "perf: faster price formatting"
+|/ /  
+| * 10a0460 Review Noa refund calculation
+| * f7e8785 (origin/noa/refund, noa/refund) test: refund tests
+| * 61bfedd feat: refund calculation for cancelled orders
+|/  
+| * 6cdb9f2 copilot checkpoint: 66360ef8-cfa7-44e8-8ea1-f0d92753d91d @ 0dc88a48-21be-41be-b1a3-9e8d4ceb165d
+|/  
+| * 09340b0 copilot checkpoint: 66360ef8-cfa7-44e8-8ea1-f0d92753d91d @ 6d47ce9f-9852-480c-a461-5ce51606c442
+|/  
+| * 6b9ec42 copilot checkpoint: 66360ef8-cfa7-44e8-8ea1-f0d92753d91d @ 44398b30-5343-47ec-9e06-c0f3cc8a03c2
+|/  
+| * fee9f58 (origin/ruth/fixes) wip: try new fonts
+| * 72063d7 debug: dump state to console
+| * 20cd6a9 WIP: try removing ticket limits
+| * 8284d98 fix: correct concert date in events.js
+| * 339324e WIP: new checkout flow (do not merge)
+|/  
+* 6e5b25d (origin/main, origin/HEAD, yaelprograming-ticketrush-exercise) feat: friendlier message for empty quantity
+* 9119fe2 fix: typo in hero heading
+* a61f4ad feat: add footer with links
+* 73924c4 perf: faster price formatting
+* 03bd4dd docs: update artist lineup text
+* c44fbf8 feat: add early-access promo banner
+* 62f48b5 (tag: v1.0) feat: purchase page UI
+* f4c58bc feat: payment provider config
+* 2cc7e97 feat: event details data
+* 8a944f6 feat: ticket price calculation with tests
+* ed1b1e9 Initial commit: project skeleton and exercise tooling
