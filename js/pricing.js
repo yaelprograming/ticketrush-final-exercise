@@ -6,7 +6,7 @@ const STUDENT_DISCOUNT = 0.15; // מבצע סטודנטיות: 15% על מחיר
 const MEMBER_DISCOUNT = 0.20;
 
 function maxTickets(isMember) {
-  return isMember ? 4 : MAX_TICKETS;
+  return isMember ? 6 : MAX_TICKETS;
 }
 
 function calcTotal(qty, isMember, isStudent) {
